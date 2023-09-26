@@ -1,0 +1,201 @@
+main {
+  width:100%;
+  height:auto;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+section#visual_contents {
+  width:100%;
+  height:171px;
+  background:url(/musicrecorde.rwd/mobile/genre/images/visual_indi.png) no-repeat center;
+  background-size:cover;
+  overflow:hidden;
+  position:relative;
+  top:0px;
+  left:0px;
+}
+ul#jenre_title {
+  position:absolute;
+  left:50%;
+  margin-left:-40%;
+  top:15%;
+  width:80%;
+  height:48px;
+  
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+ul#jenre_title>li {
+   line-height:48px;
+   font:normal 3.5vw/48px "Noto Sans KR"
+}
+
+ul#jenre_title>li:nth-child(1) {
+  font:bold 7vw/48px "Noto Sans KR"
+}
+ul#jenre_title>li>img {
+  width:31px;
+  height:30px;
+  margin-top:10px;
+}
+input#search_music {
+  width:60%;
+  height:38px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-30%;
+  background:rgba(255,255,255,0.5);
+  border:none;
+}
+input#search_music::placeholder {
+  color:black;
+  text-align:center;
+  font:bold 3.125vw "Noto Sans KR";
+  
+}
+span>img {
+  position:absolute;
+  margin-left:270px;
+  margin-top:97px;
+}
+
+section#contents2 {
+  width:100%;
+  height:532px;
+  background:#EDF6FF;
+}
+ul#music_list_contents {
+  width:100%;
+  height:100%;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+ul#music_list_contents>li {
+ width:100%;
+ height:14%;
+}
+
+p#albumimg {
+  position:absolute;
+  margin-left:9.375%;
+  margin-top:6.237%;
+}
+p#albumimg>img {
+  width:70%;
+}
+p#music_title {
+  position:absolute;
+  margin-left:23%;
+  margin-top:4.5%;
+  font:bold 18px "Noto Sans KR";
+}
+p#artist {
+  position:absolute;
+  margin-left:23%;
+  margin-top:10%;
+  font:bold 12px "Noto Sans KR"
+}
+p#music_info {
+  position:absolute;
+  margin-top:6%;
+  margin-left:80%;
+}
+p#music_info>img {
+  width:70%;
+}
+
+section#contents3 {
+  width:100%;
+  height:53px;
+  background:#DBEDFF;
+  padding-left:5.156%;
+  padding-right:4.253%;
+  box-sizing: border-box;
+  position:absolute;
+  margin-top:-53px;
+}
+p#playing_title {
+  font:normal 4.017vw "Noto Sans KR";
+  margin-top:2%;
+}
+p#playing_artist {
+  font:normal 3.125vw "Noto Sans KR";
+  color:#655959;
+}
+p#playbtn {
+  width:35px;
+  height:35px;
+  margin-left:290px;
+  margin-top:-30px;
+  
+}
+p#playbtn>img {
+  width:60%;
+}
+p#playing_list {
+  width:32px;
+  height:29px;
+  margin-left:320px;
+  margin-top:-34px;
+  
+}
+p#playing_list>img {
+  width:75%;
+}
+
+@media screen and (orientation:landscape){
+  input#search_music::placeholder {
+    font-size: 2.5vw;
+  }
+  span>img {
+    margin-left:500px;
+    margin-top:95px;
+  }
+  ul#jenre_title>li:nth-child(1) {
+    font:bold 5vw/48px "Noto Sans KR"
+  }
+  ul#jenre_title>li {
+    line-height:48px;
+    font:normal 3vw/48px "Noto Sans KR"
+ }
+ p#albumimg {
+  position:absolute;
+  margin-left:9.375%;
+  margin-top:5.237%;
+}
+p#albumimg>img {
+  width:80%;
+}
+p#music_title {
+  position:absolute;
+  margin-left:17%;
+  margin-top:4.5%;
+  font:bold 18px "Noto Sans KR";
+}
+p#artist {
+  position:absolute;
+  margin-left:17%;
+  margin-top:7.5%;
+  font:bold 12px "Noto Sans KR"
+}
+p#music_info {
+  position:absolute;
+  margin-top:6%;
+  margin-left:80%;
+}
+p#music_info>img {
+  width:80%;
+}
+}
+
+
+
+
+

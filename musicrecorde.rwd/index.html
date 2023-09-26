@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>musicrecorde반응형</title>
+  <link rel="stylesheet" href="/musicrecorde.rwd/css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+  <link rel="stylesheet" href="/musicrecorde.rwd/css/common.css">
+  <link rel="stylesheet" href="/musicrecorde.rwd/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="/musicrecorde.rwd/js/navi.js"></script>
+  <script src="/musicrecorde.rwd/js/main.js"></script>
+  <script src="/musicrecorde.rwd/js/contents.js"></script>
+  <script>
+      var ua = window.navigator.userAgent.toLowerCase();
+	    var deviceWidth=null;
+      
+	    if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)) {
+	     document.location.replace("http://threechany.dothome.co.kr/musicrecorde.rwd/mobile/");
+    	}else{
+    	  window.addEventListener('resize',()=>{
+        
+        deviceWidth=window.innerWidth;
+        
+        if(deviceWidth<=768){
+          
+          document.location.replace("http://threechany.dothome.co.kr/musicrecorde.rwd/mobile/")
+          
+        }   
+        
+      }) 
+    	  
+    	}
+
+  </script>
+
+</head>
+<body>
+
+  <ul id="skipmenu_list">
+    <li><a href="#" class="hidden">메인메뉴바로가기</a></li>
+    <li><a href="#music_contents_wrap3" class="hidden">장르별 노래 바로가기</a></li>
+    <li><a href="#footer_wrap" class="hidden">하단바로가기</a></li>
+  </ul>
+
+  <div id="header_wrap">
+    <header>
+      <h1 id="logo" class="hidden">로고<a href="/musicrecorde.rwd/index.html"><img src="/musicrecorde.rwd/images/logo1.gif"></a></h1>
+      <nav id="topmenu1">
+        <h2 class="hidden">홈페이지기타운영정보</h2>
+        <ul id="topmenu1_list">
+          <li>Open hour - 10 am - 11 pm</li>
+          <li>ofmusic@ofmusic.co.kr</li>
+          <li>(123)456-7890</li>
+        </ul>
+      </nav>
+      <nav id="topmenu2">
+        <h2 class="hidden">홈페이지외부링크</h2>
+        <ul id="topmenu2_list">
+          <li><a href="#"><img src="/musicrecorde.rwd/images/facebook.gif" alt="페이스북"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/twitter.gif" alt="트위터"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/DDAUMPYO.gif" alt="따움표"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/instagrem.gif" alt="인스타그램"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/email.jpg" alt="이메일"></a></li>
+        </ul>
+      </nav>
+      <nav id="mainmenu">
+        <h2 class="hidden">메인메뉴 및 서브메뉴</h2>
+        <ul id="mainmenu_list">
+          <li><a href="#">HOME</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ABOUT US</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Update Music</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="/musicrecorde.rwd/genre.rwd/genre.html">GENRE</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ENENT</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CONTENTS US</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+
+    </header>
+  </div>
+  
+  <div id="visual_wrap">
+    <ul id="visual_list">
+      <li>
+        <h2 class="hidden">메인비쥬얼1</h2>
+        <div class="visual_title_wrap">
+          <p class="visualTitle">All of the music</p>
+          <p class="visual_subTitle">모든 음악<br>더 가까이 편하게 만나세요</p>
+        </div>
+      </li>
+      <li>
+        <h2 class="hidden">메인비쥬얼2</h2>
+        <div class="visual_title_wrap">
+          <p class="visualTitle">Any music you want to hear</p>
+          <p class="visual_subTitle">듣고싶은 음악을 언제든지<br>더 가까이 편하게 만나세요</p>
+        </div>
+      </li>
+      <li>
+        <h2 class="hidden">메인비쥬얼3</h2>
+        <div class="visual_title_wrap">
+          <p class="visualTitle">All the music in the world is here</p>
+          <p class="visual_subTitle">세상의 모든 음악들이 여기에<br>더 가까이 편하게 만나세요</p>
+        </div>
+      </li>
+      <li>
+        <h2 class="hidden">메인비쥬얼4</h2>
+        <div class="visual_title_wrap">
+          <p class="visualTitle">Listen to music comfortably</p>
+          <p class="visual_subTitle">편안하게 음악을 들으세요<br>더 가까이 편하게 만나세요</p>
+        </div>
+      </li>
+    </ul>
+
+    <p id="prev_btn"><i class="fa-solid fa-circle-chevron-left"></i></p>
+    <p id="next_btn"><i class="fa-solid fa-circle-chevron-right"></i></p>
+    
+    
+      <ul id="dot_list">
+        <li class="selected2"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div id="search_wrap">
+    <section id="search_contents">
+      <h2 class="hidden">노래 검색 컨텐츠</h2>
+      <section id="search_contents_list">
+        <h2 class="hidden">검색창</h2>
+        <p id="title">Subscribe to Music</p>
+        <input type="text" id="music_write" placeholder="  New Jeans-Ditto" size="20">
+        <button id="search">
+          SUBSCRIBE
+        </button>
+      </section>
+    </section>
+  </div>
+
+  <div id="music_contents_wrap1">
+    <section id="music_contents_1">
+      <h2 class="hidden">노래 작사, 작곡, 공유, 앨범제작 컨텐츠</h2>
+      <ul id="music_contents_1_list">
+        <li>
+         <p class="music_contents1_img1"><a href="#"><img src="/musicrecorde.rwd/images/contents2_img1.png" alt="작곡 작사"></a></p>
+         <p class="text"><a href="#">Cmposing lyrics<br>원하는 음악과 가사를 만들어보세요</a></p>
+         <p class="music_contents1_img2"><a href="#"><img src="/musicrecorde.rwd/images/contents2_img4.gif"></a></p>
+        </li>
+        <li>
+        <p class="music_contents1_img1"><a href="#"><img src="/musicrecorde.rwd/images/contents2_img2.jpg" alt="음악 공유"></a></p>
+        <p class="text"><a href="#">Share music<br>본인만 알고있는 좋아하는 노래를 공유해보세요</a></p>
+        <p class="music_contents1_img2"><a href="#"><img src="/musicrecorde.rwd/images/contents2_img5.gif"></a></p>
+        </li>
+        <li>
+          <p class="music_contents1_img1"><a href="#"><img src="/musicrecorde.rwd/images/contents2_img3.jpg" alt="앨범 제작"></a></p>
+          <p class="text"><a href="#">Album production<br>앨범 제작도 해보고 선보여주세요</a></p>
+          <p class="music_contents1_img2"><a href="#"><img src="/musicrecorde.rwd/images/contents2_img6.gif"></a></p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="music_contents_wrap2">
+    <p id="music_contents_wrap2_title">홈페이지 일일 현황</p>
+    <section id="music_contents_2">
+      <li>
+        <p class="music_contents_2_title">stay time</p>
+        <p class="music_contents_2_text">of music 에서 보낸 시간 3h 42m</p>
+        <img src="/musicrecorde.rwd/images/images/stay.png">
+      </li>
+      <li>
+        <p class="music_contents_2_title">update music</p>
+        <p class="music_contents_2_text">업데이트 된 노래 720곡</p>
+        <img src="/musicrecorde.rwd/images/download.jpg">
+      </li>
+      <li>
+        <p class="music_contents_2_title">visits</p>
+        <p class="music_contents_2_text">방문자수 9,999+</p>
+        <img src="/musicrecorde.rwd/images/login.jpg">
+      </li>
+      <li>
+        <p class="music_contents_2_title">search music</p>
+        <p class="music_contents_2_text">검색한 노래 9,999+</p>
+        <img src="/musicrecorde.rwd/images/search.jpg">
+      </li>
+    </section>
+    
+  </div>
+
+  <div id="music_contents_wrap3">
+    <section id="music_contents_3">
+      <h2 class="hidden">장르별 음악</h2>
+      <p id="music_contents_3_center_title">장르</p>
+      <ul id="music_contents_3_list">
+        <li>
+          <p class="music_contents3_img"><a href="#"><img src="/musicrecorde.rwd/images/-music_contents3_img1.gif" alt="댄스팝음악"></a></p>
+          <p class="music_contents3_text">Ditto - Newjeans</p>
+          <p class="music_contents3_text">Hypeboy - Newjeans</p>
+          <p class="music_contents3_text">Teddybear - Stacy</p>
+          <p class="music_contents3_text2">...</p>
+        </li>
+        <li>
+          <p class="music_contents3_img"><a href="#"><img src="/musicrecorde.rwd/images/-music_contents3_img2.gif" alt="인디음악"></a></p>
+          <p class="music_contents3_text">그라데이션 - 10cm</p>
+          <p class="music_contents3_text">정이라고 하자 (Feat.10cm) - 서동현</p>
+          <p class="music_contents3_text">Love story - 볼빨간사춘기</p>
+          <p class="music_contents3_text2">...</p>
+        </li>
+        <li>
+          <p class="music_contents3_img"><a href="#"><img src="/musicrecorde.rwd/images/-music_contents3_img3.gif" alt="랩힙합음악"></a></p>
+          <p class="music_contents3_text">봄날 - 방탄소년단</p>
+          <p class="music_contents3_text">어떻게지내(prod.By.Van.C) - 오반</p>
+          <p class="music_contents3_text">Officialy Missing You - 긱스</p>
+          <p class="music_contents3_text2">...</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="music_contents4_wrap4">
+    <section id="music_contents_4">
+      <h2 class="hidden">계절별 음악</h2>
+      <ul id="music_contents_4">
+        <li><a href="#"><img src="/musicrecorde.rwd/images/wrap3_contents3_img1.gif" alt="봄노래"></a></li>
+        <li><a href="#"><img src="/musicrecorde.rwd/images/wrap3_contents3_img2.copy.png" alt="여름노래"></a></li>
+        <li><a href="#"><img src="/musicrecorde.rwd/images/wrap3_contents3_img4.gif" alt="가을노래"></a></li>
+        <li><a href="#"><img src="/musicrecorde.rwd/images/wrap3_contents3_img5.gif" alt="겨울노래"></a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="music_contents_wrap5">
+    <section id="music_contents_5">
+      <h2 class="hidden">VIP멤버들을 위한 음악전자기기 할인</h2>
+        <p id="vip_title">VIP Membership</p>
+        <p id="vip_text">of the music vip space</p>
+      <ul id="vip_membership">
+        <li>
+          <p class="vip_title1">01</p>
+          <p class="vip_title2">음향기기,생활가전</p>
+          <p class="vip_title3"><img src="/musicrecorde.rwd/images/contents4_img1.gif"></p>
+          <p class="vip_title4">admin</p>
+          <p class="vip_title5"><img src="/musicrecorde.rwd/images/contents4_img1-02.gif"></p>
+          <p class="vip_title6">230</p>
+          <p class="vip_img"><img src="/musicrecorde.rwd/images/contents4_img3.gif" alt="음향기기,생활가전"></p>
+          <p class="vip_text">혜택 하나<br>
+            매월 달달한 이벤트!<br>
+            매월 달라지는 특별한 이벤트로 일상 속 소소한 행복을 드립니다.<br>
+            VIP회원에게만 제공되는 다양한 삶의질을 경험해보세요.<br>
+           
+       
+          </p>
+            <button id="readmore">READ MORE</button>
+        </li>
+        <li>
+          <p class="vip_title1">02</p>
+          <p class="vip_title2">다양한 문화 혜택 제공</p>
+          <p class="vip_title3"><img src="/musicrecorde.rwd/images/contents4_img1.gif"></p>
+          <p class="vip_title4">admin</p>
+          <p class="vip_title5"><img src="/musicrecorde.rwd/images/contents4_img1-02.gif"></p>
+          <p class="vip_title6">230</p>
+          <p class="vip_img"><img src="/musicrecorde.rwd/images/contents4_img3.gif" alt="음향기기,생활가전"></p>
+          <p class="vip_text">혜택 셋<br>
+            음향기기, 생활가전 등 최저가 판매! 최고 품질의 다양한 제품들을 최저가로 구입할 수 있습니다.
+            혜택 넷<br>
+            VIP회원에게만 제공되는 도서, 영화, 공연 등 다양한 문화 혜택을 만나보세요.</p>
+            <button id="readmore">READ MORE</button>
+        </li>
+      </ul>
+      
+    </section>
+  </div>
+
+  <footer id="footer_wrap">
+    <h2 class="hidden">하단영역 홈페이지정보</h2>
+    <ul id="information">
+      <li>(우) 44687  울산광역시 남구 옥현로 129, 울산벤처빌딩 802호 인플러스</li>
+      <li>Tex : (012)345-6789</li>
+      <li>Fax : (012)345-6789</li>
+      <li>Email : ofmusci@ofmusic.co.kr</li>
+    </ul>
+    <p>ⓒ INPLUS all rights reserved.</p>
+   </footer>
+</body>
+</html>

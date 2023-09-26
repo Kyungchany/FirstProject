@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/musicrecorde.rwd/mobile/genre/css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/musicrecorde.rwd/mobile/genre/css/common.css">
+  <link rel="stylesheet" href="/musicrecorde.rwd/mobile/genre/css/main.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="/musicrecorde.rwd/mobile/genre/js/menu.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js'></script>
+  
+  <script>
+    var deviceWidth=null
+            
+            window.addEventListener('resize',()=>{        
+              deviceWidth=window.innerWidth;        
+              if(deviceWidth>768){          
+                document.location.replace("http://threechany.dothome.co.kr/musicrecorde.rwd/genre.rwd/genre.html")          
+              } 
+      
+            })       
+  </script>
+
+  <title>genre indi music</title>
+
+</head>
+<body>
+  <header>
+
+    <p id="menu"><img src="/musicrecorde.rwd/mobile/images/menubar.png"></p>
+    <p id="logo"><img src="/musicrecorde.rwd/mobile/images/mobile_logo 2.png"></p>
+    <p id="mobile_title">of the music</p>
+
+    <div id="mobilemenu">
+        <ul id="mobile_inner_info">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+            <p id="close_btn"><img src="/musicrecorde.rwd/mobile/images/closebtn.png"></p>
+        
+            <ul id="mobile_inner_menulist">
+                <li class="mobile_inner_menu"><a href="#">Update Music</a>
+                  <i id="down_icon" class="fa-solid fa-caret-down"></i>
+                  <!-- <span><img src="/musicrecorde.rwd/mobile/images/mobilemenu_icon04.png"></span> -->
+                  <ul class="mobile_inner_submenu">
+                    <li><a href="#">실시간</a></li>
+                    <li><a href="#">월간</a></li>
+                    <li><a href="#">주간</a></li>
+                    <li><a href="#">일간</a></li>
+                  </ul>
+                </li>
+                 <li class="mobile_inner_menu"><a href="#">Genre</a>
+        
+                  <i id="down_icon" class="fa-solid fa-caret-down"></i>
+                  <ul class="mobile_inner_submenu">
+                    <li><a href="#">국내 장르</a></li>
+                    <li><a href="#">해외 장르</a></li>
+                    <li><a href="#">기타 장르</a></li>
+                  </ul>
+        
+                </li>
+                <li class="mobile_inner_menu"><a href="#">Event</a>
+                  <i id="down_icon" class="fa-solid fa-caret-down"></i>
+                  <ul class="mobile_inner_submenu">
+                    <li><a href="#">Vip Membership</a></li>
+                  </ul>
+                </li>
+                <li class="mobile_inner_menu"><a href="#">My Info</a>
+                  <i id="down_icon" class="fa-solid fa-caret-down"></i>
+                  <ul class="mobile_inner_submenu">
+                    <li><a href="#">내 정보 보기</a></li>
+                    <li><a href="#">내 정보 수정</a></li>
+                  </ul>
+                </li> 
+              </ul>
+              <!-- <div id="overflowbackground"></div> -->
+    </div>
+  </header>
+
+  <main>
+
+    <section id="visual_contents">
+      <ul id="jenre_title">
+        <li>인디</li>
+        <li>댄스/팝</li>
+        <li>랩/힙합</li>
+        <li>발라드</li>
+        <li>알앤비</li>
+        <li><img src="/musicrecorde.rwd/mobile/genre/images/nextmenu.png"></li>
+      </ul>
+      <input type="text" id="search_music" placeholder="subscribe to music"><span><img src="/musicrecorde.rwd/mobile/genre/images/glass.png"></span>
+    </section>
+
+    <section id="contents2">
+      <ul id="music_list_contents">
+        <li>
+          <p id="albumimg"><img src="/musicrecorde.rwd/mobile/genre/images/10cm 그라데이션 1.png"></p>
+          <p id="music_title">그라데이션</p>
+          <p id="artist">10cm</p>
+          <p id="music_info"><img src="/musicrecorde.rwd/mobile/genre/images/music.info.png"></p>
+        </li>
+        <li>
+          <p id="albumimg"><img src="/musicrecorde.rwd/mobile/genre/images/어떻게 지내 오반 1.png"></p>
+          <p id="music_title">어떻게 지내</p>
+          <p id="artist">오반(Prod.By Van.C)</p>
+          <p id="music_info"><img src="/musicrecorde.rwd/mobile/genre/images/music.info.png"></p>
+        </li>
+        <li>
+          <p id="albumimg"><img src="/musicrecorde.rwd/mobile/genre/images/officially Missing You긱스 1.png"></p>
+          <p id="music_title">Officially Missing You</p>
+          <p id="artist">긱스(Geeks)</p>
+          <p id="music_info"><img src="/musicrecorde.rwd/mobile/genre/images/music.info.png"></p>
+        </li>
+        <li>
+          <p id="albumimg"><img src="/musicrecorde.rwd/mobile/genre/images/madeleine love 1.png"></p>
+          <p id="music_title">Madeleine Love</p>
+          <p id="artist">CHEEZE(치즈)</p>
+          <p id="music_info"><img src="/musicrecorde.rwd/mobile/genre/images/music.info.png"></p>
+        </li>
+        <li>
+          <p id="albumimg"><img src="/musicrecorde.rwd/mobile/genre/images/주저하는 연인들을 위해 1.png"></p>
+          <p id="music_title">주저하는 연인들을 위해</p>
+          <p id="artist">잔나비</p>
+          <p id="music_info"><img src="/musicrecorde.rwd/mobile/genre/images/music.info.png"></p>
+        </li>
+        <li>
+          <p id="albumimg"><img src="/musicrecorde.rwd/mobile/genre/images/정이라고 하자 1.png"></p>
+          <p id="music_title">정이라고 하자</p>
+          <p id="artist">BIG Naughty</p>
+          <p id="music_info"><img src="/musicrecorde.rwd/mobile/genre/images/music.info.png"></p>
+        </li>
+        <li>
+          <p id="albumimg"><img src="/musicrecorde.rwd/mobile/genre/images/love_story 1.png"></p>
+          <p id="music_title">Love story</p>
+          <p id="artist">볼빨간 사춘기</p>
+          <p id="music_info"><img src="/musicrecorde.rwd/mobile/genre/images/music.info.png"></p>
+        </li>
+      </ul>
+        <section id="contents3">
+          <p id="playing_title">Officially Missing You</p>
+          <p id="playing_artist">긱스(Geeks)</p>
+          <p id="playbtn"><img src="/musicrecorde.rwd/mobile/genre/images/playbutton.png"></p>
+          <p id="playing_list"><img src="/musicrecorde.rwd/mobile/genre/images/playing.png"></p>
+        </section>
+
+      
+    </section>
+    
+  </main>
+
+  <footer>
+    <p id="home"><img src="/musicrecorde.rwd/mobile/images/footer_home.png"></p>
+    <p id="man"><img src="/musicrecorde.rwd/mobile/images/footer_man.png"></p>
+    <p id="mike"><img src="/musicrecorde.rwd/mobile/images/footer_mike.png"></p>
+    <p id="search_music"><img src="/musicrecorde.rwd/mobile/images/music_search.png"></p>
+    <p id="setting"><img src="/musicrecorde.rwd/mobile/images/setting.png"></p>
+  </footer>
+
+
+</body>
+</html>

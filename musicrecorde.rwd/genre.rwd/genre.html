@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genre반응형</title>
+  <link rel="stylesheet" href="/musicrecorde.rwd/genre.rwd/css/reset.css">
+  <link rel="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/musicrecorde.rwd/genre.rwd/css/common.css">
+  <link rel="stylesheet" href="/musicrecorde.rwd/genre.rwd/css/main.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js'></script>
+  <script src="/musicrecorde.rwd/genre.rwd/js/navi.js"></script>
+  <script src="/musicrecorde.rwd/genre.rwd/js/menubar_navi.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+  <script>
+      var ua = window.navigator.userAgent.toLowerCase();
+	    var deviceWidth=null;
+      
+	    if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)) {
+	     document.location.replace("http://threechany.dothome.co.kr/musicrecorde.rwd/mobile/genre/index.html");
+    	}else{
+    	  window.addEventListener('resize',()=>{
+        
+        deviceWidth=window.innerWidth;
+        
+        if(deviceWidth<=768){
+          
+          document.location.replace("http://threechany.dothome.co.kr/musicrecorde.rwd/mobile/genre/index.html")
+          
+        }   
+        
+      }) 
+    	  
+    	}
+
+  </script>
+</head>
+<body>
+  <ul id="skipmenu_list">
+    <li><a href="#" class="hidden">메인메뉴바로가기</a></li>
+    <li><a href="#sub_contents_inner" class="hidden">장르별 노래 바로가기</a></li>
+    <li><a href="#footer_wrap" class="hidden">하단바로가기</a></li>
+  </ul>
+  
+  <div id="header_wrap">
+    <header>
+      <h1 id="logo" class="hidden">로고<a href="/musicrecorde.rwd/index.html"><img src="/musicrecorde.rwd/images/logo1.gif"></a></h1>
+
+      <nav id="topmenu1">
+        <h2 class="hidden">홈페이지기타운영정보</h2>
+        <ul id="topmenu1_list">
+          <li>Open hour - 10 am - 11 pm</li>
+          <li>ofmusic@ofmusic.co.kr</li>
+          <li>(123)456-7890</li>
+        </ul>          
+      </nav>
+
+      <nav id="topmenu2">
+        <h2 class="hidden">홈페이지외부링크</h2>
+        <ul id="topmenu2_list">
+          <li><a href="#"><img src="/musicrecorde.rwd/images/facebook.gif"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/twitter.gif"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/DDAUMPYO.gif"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/instagrem.gif"></a></li>
+          <li><a href="#"><img src="/musicrecorde.rwd/images/email.jpg"></a></li>
+          
+        </ul>
+      </nav>
+
+      <nav id="mainmenu">
+        <h2 class="hidden">메인메뉴 및 서브메뉴</h2>
+        <ul id="mainmenu_list">
+          <li><a href="/musicrecorde.rwd/index.html">HOME</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ABOUT US</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul></li>
+          <li><a href="#">GENRE</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ALBUM</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">EVENT</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CONTENTS US</a>
+            <ul class="submenu_list">
+              <li><a href="#">서브메뉴1</a></li>
+              <li><a href="#">서브메뉴2</a></li>
+              <li><a href="#">서브메뉴3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="genre_visual">
+
+  </div>
+
+  <div id="sub_contents_wrap">
+
+    <section id="sub_contents">
+      <h2 class="hidden">장르</h2>
+      <div id="sub_menu_wrap">
+        <nav id="menubar">
+          <h2 class="hidden">메뉴바리스트</h2>
+          <div id="menubar_title">
+            <p id="title">Of The Music</p>
+            <p id="text">Genre</p>
+          </div>
+          <ul id="menubar_list">
+            <li class="menubar_list_main">Music chart
+              <ul class="menubar_list_sub">
+                <li><a href="#">실시간</a></li>
+                <li><a href="#">월간</a></li>
+                <li><a href="#">주간</a></li>
+                <li><a href="#">일간</a></li>
+              </ul>
+            </li>
+            <li class="menubar_list_main">Update Music
+              <ul class="menubar_list_sub">
+                <li><a href="#">실시간</a></li>
+                <li><a href="#">월간</a></li>
+                <li><a href="#">주간</a></li>
+                <li><a href="#">일간</a></li> 
+              </ul>
+            </li>
+            <li class="menubar_list_main">Genre
+              <ul class="menubar_list_sub">
+                <li><a href="#">댄스/팝</a></li>
+                <li><a href="#">인디</a></li>
+                <li><a href="#">랩/힙합</a></li>
+                <li><a href="#">기타 등등</a></li>
+              </ul>
+            </li>
+            <li class="menubar_list_main">Composing lyrics
+              <ul class="menubar_list_sub">
+                
+              </ul>
+            </li>
+            <li class="menubar_list_main">Share Music
+              <ul class="menubar_list_sub">
+
+              </ul>
+            </li>
+            <li class="menubar_list_main">Album producing
+              <ul class="menubar_list_sub">
+
+              </ul>
+            </li>
+          </ul>
+         
+          </ul>
+        </nav>
+      </div>
+
+      <div id="sub_contents_inner">
+        <nav id="genre_dancepop">
+          <h2 class="hidden">장르 댄스팝</h2>
+        <ul id="ganre_dancepop_title">
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg02.gif"></li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg03.gif"></li>
+          <li>장르</li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg03.gif"></li>
+          <li>댄스/팝</li>
+        </ul>
+        <p id="text2">장르</p>
+        
+        <ul id="ganre_dancepop_title2">
+          <li>총 9,999+건의 곡이 검색되었습니다.</li>
+          <li>댄스/팝</li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg04.gif"></li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/dancepop_img6.gif"></li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/dancepop_img7.gif"></li>
+          <input type="text" id="musicwrite" placeholder="       New Jeans-Ditto"><span id="text_img"><img src="/musicrecorde/GENRE/images/dancepop_img5.gif"></span> 
+        </ul>
+        
+        
+        
+        
+       <table id="music_list">
+        <tr>
+          <th class="rank">순위</th><th class="music">곡</th><th class="artist">아티스트</th>
+          <th class="sound">듣기</th><th class="play">재생목록</th><th class="download">다운로드</th>
+        </tr>
+        <tr>
+          <td class="rank">1</td><td class="music">Ditto</td><td class="artist">NewJeans</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">2</td><td class="music">Hypeboy</td><td class="artist">NewJeans</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        <tr>
+          <td class="rank">3</td><td class="music">Ditto</td><td class="artist">NewJeans</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">4</td><td class="music">Cupid</td><td class="artist">FIFTY FIFTY</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">5</td><td class="music">손오공</td><td class="artist">세븐틴(SEVENTEEN)</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">6</td><td class="music">I AM</td><td class="artist">IVE (아이브)</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">7</td><td class="music">Kitch</td><td class="artist">IVE (아이브)</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">8</td><td class="music">꽃</td><td class="artist">NewJeans</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td> 
+        </tr>
+        <tr>
+          <td class="rank">9</td><td class="music">OMG</td><td class="artist">NewJeans</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">10</td><td class="music">Love ME Like This</td><td class="artist">NMIXX</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">11</td><td class="music">건물 사이에 피어난 장미</td><td class="artist">H1-KEY (하이키)</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">12</td><td class="music">Attention</td><td class="artist">NewJeans</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">12</td><td class="music">파이팅 해야지(Feat.이영지)</td><td class="artist">부석순(SEVENTEEN)</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+        <tr>
+          <td class="rank">12</td><td class="music">사건의 지평선</td><td class="artist">윤하(Younha)</td>
+          <td class="sound"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg07.gif"></td>
+          <td class="play"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg08.gif"></td>
+          <td class="download"><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg09.gif"></td>
+        </tr>
+       </table>
+       
+       <div id="next">
+        <ul id="next_bar">
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg10.gif"</li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg11.gif"</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg12.gif"</li>
+          <li><img src="/musicrecorde.rwd/genre.rwd/images/images/dancepopimg14.gif"</li>
+        </ul>
+       </div>
+      </nav> 
+
+      </div>
+    </section>
+    </section>
+  </div>
+
+  <footer id="footer_wrap">
+    <h2 class="hidden">하단영역 홈페이지정보</h2>
+    <ul id="information">
+      <li>(우) 44687  울산광역시 남구 옥현로 129, 울산벤처빌딩 802호 인플러스</li>
+      <li>Tex : (012)345-6789</li>
+      <li>Fax : (012)345-6789</li>
+      <li>Email : ofmusci@ofmusic.co.kr</li>
+    </ul>
+    <p>ⓒ INPLUS all rights reserved.</p>
+   </footer>
+</body>
+</html>
